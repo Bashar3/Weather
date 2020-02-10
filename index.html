@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather App - JavaScript</title>
+    <link rel="stylesheet" href="font/Rimouski.css">
+    <link rel="stylesheet" href="style.css">
+   </head>
+
+   <div class="icon sun-shower">
+    <div class="cloud"></div>
+    <div class="sun">
+      <div class="rays"></div>
+    </div>
+    <div class="rain"></div>
+  </div>
+  
+  <div class="icon thunder-storm">
+    <div class="cloud"></div>
+    <div class="lightning">
+      <div class="bolt"></div>
+      <div class="bolt"></div>
+    </div>
+  </div>
+  
+  <div class="icon cloudy">
+    <div class="cloud"></div>
+    <div class="cloud"></div>
+  </div>
+  
+  <div class="icon flurries">
+    <div class="cloud"></div>
+    <div class="snow">
+      <div class="flake"></div>
+      <div class="flake"></div>
+    </div>
+  </div>
+  
+  <div class="icon sunny">
+    <div class="sun">
+      <div class="rays"></div>
+    </div>
+  </div>
+  
+  <div class="icon rainy">
+    <div class="cloud"></div>
+    <div class="rain"></div>
+  </div>
+<body>
+
+    <div class="text-header">
+        <p>Weather Geo City Search</p>
+    </div>
+    <div class="weather-wrapper">
+    
+    <div class="container1">
+        <div class="app-title">
+            <p>Weather</p>
+        </div>
+        <div class="notification"> </div>
+        <div class="weather-container">
+            <div class="weather-icon">
+                <img src="icons/unknown.png" alt="">
+            </div>
+            <div class="temperature-value">
+                <p>- °<span>C</span></p>
+            </div>
+            <div class="temperature-description">
+                <p> - </p>
+            </div>
+            <div class="location">
+                <p>-</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container2">
+        
+        <div class="app-title">
+            <p>Weather</p>
+        </div>
+        <div class="notification other"> </div>
+        <div class="weather-container other">
+            <div class="weather-icon other">
+                <img src="icons/unknown.png" alt="">
+            </div>
+            <div class="temperature-value other">
+                <p>- °<span>C</span></p>
+            </div>
+            <div class="temperature-description other">
+                <p> - </p>
+            </div>
+            <div class="location other">
+                <p>-</p>
+            </div>
+            
+            <div class="login-container">
+                <p>Enter a city to compare</p>
+                <p><input type="city" id="search-input" placeholder="City "></p>
+                <button onclick="myFunction()">Submit</button>
+               
+            </div>
+        </div>
+        
+    </div>
+   
+</div>
+<script src="weather.js"></script>
+    
+   
+</body>
+
+</html>
